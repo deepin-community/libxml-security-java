@@ -1,0 +1,3 @@
+no-errorprone.patch
+exclude-tests.patch
+remove-XMLUtilsPerformanceTest.java.patch

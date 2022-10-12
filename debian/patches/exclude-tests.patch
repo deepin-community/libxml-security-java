@@ -1,0 +1,23 @@
+From: Markus Koschany <apo@debian.org>
+Date: Sun, 14 Nov 2021 13:16:05 +0100
+Subject: exclude tests
+
+Exclude tests because of missing dependencies.
+
+Forwarded: not-needed
+---
+ pom.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/pom.xml b/pom.xml
+index a71e885..3947c44 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -437,6 +437,7 @@
+                                 <excludes>
+                                     <exclude>**/PerformanceMemoryTest.java</exclude>
+                                     <exclude>**/PerformanceTimingTest.java</exclude>
++                                    <exclude>**/XMLUtilsPerformanceTest.java</exclude>
+                                 </excludes>
+                                 <argLine>-Xmx2000m --add-opens java.base/java.lang.reflect=ALL-UNNAMED</argLine>
+                                 <systemPropertyVariables>

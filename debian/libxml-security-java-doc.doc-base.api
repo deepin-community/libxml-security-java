@@ -1,0 +1,10 @@
+Document: libxml-security-java
+Title: API Javadoc for Apache Santuario
+Author: The Apache Software Foundation developers
+Abstract: This is the API Javadoc provided for the
+ libxml-security-java library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libxml-security-java/api/index.html
+Files: /usr/share/doc/libxml-security-java/api/*

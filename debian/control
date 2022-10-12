@@ -1,0 +1,59 @@
+Source: libxml-security-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Varun Hiremath <varun@debian.org>,
+ Torsten Werner <twerner@debian.org>,
+ Emmanuel Bourg <ebourg@apache.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ default-jdk-doc,
+ javahelper,
+ junit4,
+ libbcprov-java,
+ libcommons-logging-java,
+ libcommons-logging-java-doc,
+ libhamcrest-java,
+ libjaxp1.3-java,
+ libjetty9-java,
+ libmaven-bundle-plugin-java,
+ libmaven-dependency-plugin-java,
+ libmaven-javadoc-plugin-java,
+ libmaven-jaxb2-plugin-java (>= 0.14.0),
+ libwoodstox-java,
+ libxalan2-java,
+ libxalan2-java-doc,
+ libxerces2-java,
+ libxmlunit-java,
+ maven-debian-helper (>= 1.4)
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/libxml-security-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libxml-security-java
+Homepage: http://santuario.apache.org
+
+Package: libxml-security-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libxml-security-java-doc
+Description: Apache Santuario -- XML Security for Java
+ Apache Santuario supports XML-Signature Syntax and Processing, W3C
+ Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C
+ Recommendation 10 December 2002. As of version 1.4, the Java library supports
+ the standard Java API JSR-105: XML Digital Signature APIs.
+
+Package: libxml-security-java-doc
+Architecture: all
+Section: doc
+Depends: ${maven:DocDepends}, ${misc:Depends}
+Recommends: ${maven:DocOptionalDepends}
+Suggests: libxml-security-java
+Description: Documentation for Apache Santuario
+ Apache Santuario supports XML-Signature Syntax and Processing, W3C
+ Recommendation 12 February 2002, and XML Encryption Syntax and Processing, W3C
+ Recommendation 10 December 2002. As of version 1.4, the Java library supports
+ the standard Java API JSR-105: XML Digital Signature APIs.
+ .
+ This package contains the API documentation of libxml-security-java.

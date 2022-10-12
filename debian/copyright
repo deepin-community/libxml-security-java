@@ -1,0 +1,22 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Apache XML Security for Java
+Upstream-Contact: Apache Santuario Team <dev@santuario.apache.org>
+Source: https://santuario.apache.org
+Files-Excluded:
+ src/test/resources/javax/xml/crypto/dsig/
+
+Files: *
+Copyright: 1999-2015, The Apache Software Foundation.
+           2001, Institute for Data Communications Systems <http://www.nue.et-inf.uni-siegen.de/>
+           2001, The Internet Society and W3C
+           2005-2006, Sun Microsystems, Inc
+License: Apache-2.0
+ On Debian systems, the full text of the Apache License can be found
+ in the file `/usr/share/common-licenses/Apache-2.0'.
+
+
+Files: debian/*
+Copyright: 2007, Varun Hiremath <varunhiremath@gmail.com>
+License: GPL
+ On Debian systems, the full text of the GPL can be found
+ in the file `/usr/share/common-licenses/GPL'.
