@@ -1,3 +1,25 @@
+libxml-security-java (2.1.7-3+deb12u1) bookworm; urgency=medium
+
+  * Non-maintainer upload.
+  * CVE-2023-44483: Private Key disclosure in debug-log output
+    (Closes: #1059313)
+
+ -- Adrian Bunk <bunk@debian.org>  Sat, 09 May 2026 16:15:20 +0300
+
+libxml-security-java (2.1.7-3) unstable; urgency=medium
+
+  * Team upload
+  * Raising Standards version to 4.6.2:
+    - Setting Rules-Requires-Root: no
+  * Depending on liblog4j1.2-java (Closes: #1028796)
+  * Removing unneeded versioned build-dependencies
+  * Removing trailing slash in d/copyright Files-Excluded entry
+  * Use secure URI in Homepage field.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-Browse.
+  * Adding a Lintian override for embedded JS in the -doc package
+
+ -- Pierre Gruet <pgt@debian.org>  Sun, 22 Jan 2023 18:31:41 +0100
+
 libxml-security-java (2.1.7-2) unstable; urgency=medium
 
   * Team upload.

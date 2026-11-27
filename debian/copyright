@@ -3,7 +3,7 @@ Upstream-Name: Apache XML Security for Java
 Upstream-Contact: Apache Santuario Team <dev@santuario.apache.org>
 Source: https://santuario.apache.org
 Files-Excluded:
- src/test/resources/javax/xml/crypto/dsig/
+ src/test/resources/javax/xml/crypto/dsig
 
 Files: *
 Copyright: 1999-2015, The Apache Software Foundation.
