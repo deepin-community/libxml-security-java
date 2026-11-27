@@ -1,0 +1,24 @@
+From bfefaed07eb583b5048ac1639bb45eaef21dcc94 Mon Sep 17 00:00:00 2001
+From: Sean Mullan <sean.mullan@oracle.com>
+Date: Fri, 6 Oct 2023 09:40:14 -0400
+Subject: Logging improvements.
+
+---
+ .../org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod.java | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/src/main/java/org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod.java b/src/main/java/org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod.java
+index bf3d86d7..0e1db58a 100644
+--- a/src/main/java/org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod.java
++++ b/src/main/java/org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod.java
+@@ -261,7 +261,6 @@ public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
+         }
+         signature.initSign((PrivateKey)key);
+         LOG.debug("Signature provider: {}", signature.getProvider());
+-        LOG.debug("Signing with key: {}", key);
+         LOG.debug("JCA Algorithm: {}", getJCAAlgorithm());
+ 
+         try (SignerOutputStream outputStream = new SignerOutputStream(signature)) {
+-- 
+2.47.3
+

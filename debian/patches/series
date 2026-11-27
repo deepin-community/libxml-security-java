@@ -1,3 +1,4 @@
 no-errorprone.patch
 exclude-tests.patch
 remove-XMLUtilsPerformanceTest.java.patch
+0001-Logging-improvements.patch

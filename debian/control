@@ -18,20 +18,22 @@ Build-Depends:
  libhamcrest-java,
  libjaxp1.3-java,
  libjetty9-java,
+ liblog4j1.2-java,
  libmaven-bundle-plugin-java,
  libmaven-dependency-plugin-java,
  libmaven-javadoc-plugin-java,
- libmaven-jaxb2-plugin-java (>= 0.14.0),
+ libmaven-jaxb2-plugin-java,
  libwoodstox-java,
  libxalan2-java,
  libxalan2-java-doc,
  libxerces2-java,
  libxmlunit-java,
- maven-debian-helper (>= 1.4)
-Standards-Version: 4.6.0
+ maven-debian-helper
+Standards-Version: 4.6.2
 Vcs-Git: https://salsa.debian.org/java-team/libxml-security-java.git
 Vcs-Browser: https://salsa.debian.org/java-team/libxml-security-java
-Homepage: http://santuario.apache.org
+Homepage: https://santuario.apache.org
+Rules-Requires-Root: no
 
 Package: libxml-security-java
 Architecture: all
